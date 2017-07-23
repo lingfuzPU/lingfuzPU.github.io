@@ -74,23 +74,7 @@ Here is the <a href="/RefineStrichartz">report</a> with part of the results.
 <hr>
 <li><a href="http://math.mit.edu/seminars/intprob/">MIT Integrable Probability Working Group</a>
 <li><a href="http://math.mit.edu/seminars/pde-analysis/">MIT PDE/Analysis Seminar</a>
-<hr>
 
-<div style="font-size:14px">
-Visit Count: <span id="visitCountAll"></span>,&nbsp;
-This Month: <span id="visitCountMonth"></span><br>
-</div>
-
-<script>
-$(document).ready(function(){
-        $.get('http://web.lfzhang.com/count.php',function(data) {
-		var i=data.indexOf(",");
-		var a=data.slice(0,i), b=data.slice(i+1);
-                $('#visitCountAll').html(a);
-		$('#visitCountMonth').html(b);
-        });
-});
-</script>
 </body>
 </html>
 
