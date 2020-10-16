@@ -1,11 +1,49 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #8EE4FF;
+  /*color: white;*/
+  cursor: pointer;
+  /*padding: 18px;*/
+  /*width: 100%;*/
+  border: none;
+  text-align: left;
+  outline: none;
+  /*font-size: 15px;*/
+}
+
+.active, .collapsible:hover {
+  background-color: #8EE4FF;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.arxiv {
+  background-color: #76F4AD;
+  text-decoration: none;
+  color: black;
+}
+
+.journal {
+  background-color: #EED484;
+  text-decoration: none;
+  color: black;
+}
+
+</style>
+
 <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
 
 
 <script>
@@ -63,36 +101,43 @@ I’m also interested in some other problems related to statistical mechanics on
 
   
 <hr>
-<big><b>The Ising model on trees and factor of IID</b></big> (joint paper with <a href="https://sites.google.com/site/dannynam121/">Danny Nam</a> and <a href="http://web.math.princeton.edu/~asly/">Allan Sly</a>), in preparation.
 
-<br>
-<br>  
-
-
-<hr>
 <big><b>Empirical Distribution Along Geodesics in Exponential Last Passage Percolation</b></big> (joint paper with <a href="http://web.math.princeton.edu/~asly/">Allan Sly</a>), in preparation.
 
 <br>
 <br>
 
 
-<hr>
-<big><b>A Phase Transition for Repeated Averages</b></big> (joint paper with <a href="https://statweb.stanford.edu/~souravc/">Sourav Chatterjee</a>, <a href="https://statweb.stanford.edu/~cgates/PERSI/index.html">Persi Diaconis</a>, and <a href="http://web.math.princeton.edu/~asly/">Allan Sly</a>), <a href="https://arxiv.org/abs/1911.02756">arXiv</a>
+<big><b>The Ising model on trees and factor of IID</b></big> (joint paper with <a href="https://sites.google.com/site/dannynam121/">Danny Nam</a> and <a href="http://web.math.princeton.edu/~asly/">Allan Sly</a>), in preparation.
+<a class="collapsible">Abstract</a>
+<div class="content">
+<i>We study the ferromagnetic Ising model on the infinite $d$-regular tree under the free boundary condition. This model is known to be  a factor of IID  in the uniqueness regime, when the inverse temperature $\beta\ge 0$ satisfies \(\tanh \beta \le (d-1)^{-1}\）. However, in the reconstruction regime (\(\tanh \beta > (d-1)^{-\frac{1}{2}}\)), it is not a factor of IID. We prove that the Ising model is a factor of IID beyond the uniqueness regime, partially answering a question of Lyons. To be specific, we show that for all large enough \(d\), the Ising model on the $d$-regular tree is a factor of IID if \(\tanh \beta \le C(d-1)^{-\frac{1}{2}}\), where \(C>0\) is an absolute constant.</i>
+</div>
+
 <br>
+<br>  
+
+
+<big><b>A Phase Transition for Repeated Averages</b></big> (joint paper with <a href="https://statweb.stanford.edu/~souravc/">Sourav Chatterjee</a>, <a href="https://statweb.stanford.edu/~cgates/PERSI/index.html">Persi Diaconis</a>, and <a href="http://web.math.princeton.edu/~asly/">Allan Sly</a>), 2020.
+<a class="arxiv" href="https://arxiv.org/abs/1911.02756">arXiv</a>
+<a class="collapsible">Abstract</a>
+<div class="content">
 <i>
 Let \(x_1,\ldots,x_n\) be a fixed sequence of real numbers.
 At each stage, pick two indices \(I\) and \(J\) uniformly at random and replace \(x_I\), \(x_J\) by \((x_I+x_J)/2\), \((x_I+x_J)/2\).
 Clearly all the coordinates converge to \((x_1+\cdots+x_n)/n\).
 We determine the rate of convergence, establishing a sharp cutoff transition answering a question of Jean Bourgain. 
 </i>
+</div>
   
 <br>
 <br>
   
-  
-<hr>
-<big><b>Optimal Exponent for Coalescence of Finite Geodesics in Exponential Last Passage Percolation</b></big>, <a href="https://arxiv.org/abs/1912.07733">arXiv</a>
-<br>
+
+<big><b>Optimal Exponent for Coalescence of Finite Geodesics in Exponential Last Passage Percolation</b></big>, 2019.
+<a class="arxiv" href="https://arxiv.org/abs/1912.07733">arXiv</a>
+<a class="collapsible">Abstract</a>
+<div class="content">
 <i>
 In this note, 
 we study the model of directed last passage percolation on \(\mathbb{{Z}}^2\), with i.i.d. exponential weight.
@@ -101,51 +146,65 @@ For the coalescing point of these paths,
 we show that the probability for it being \(kR\) far away from the origin is in the order of \(R^{-2/3}\).
 This is motivated by a recent work of Basu, Sarkar, and Sly, where the same estimate was obtained for semi-infinite geodesics, and the optimal exponent for the finite case was left open.
 </i>
+</div>
 
 <br>
 <br>
 
-<hr>
-<big><b>Temporal Correlation in Last Passage Percolation with Flat Initial Condition via Brownian Comparison</b></big> (joint paper with <a href="https://home.icts.res.in/~rbasu/">Riddhipratim Basu</a> and <a href="https://www.stat.berkeley.edu/~sganguly/">Shirshendu Ganguly</a>), <a href="https://arxiv.org/abs/1912.04891">arXiv</a>
-<br>
+<big><b>Temporal Correlation in Last Passage Percolation with Flat Initial Condition via Brownian Comparison</b></big> (joint paper with <a href="https://home.icts.res.in/~rbasu/">Riddhipratim Basu</a> and <a href="https://www.stat.berkeley.edu/~sganguly/">Shirshendu Ganguly</a>), 2019.
+<a class="arxiv" href="https://arxiv.org/abs/1912.04891">arXiv</a>
+<a class="collapsible">Abstract</a>
+<div class="content">
 <i>
 We consider directed last passage percolation on \(\mathbb{{Z}}^2\) with exponential passage times on the vertices. A topic of great interest is the coupling structure of the weights of geodesics between points as they are varied in space and time with various initial conditions with a particular case of importance being the flat initial data which corresponds to line-to-point last passage times. Settling a conjecture by Ferrari and Spohn (SIGMA 2016), we show that for the passage times from the line \(x+y=0\) to the points \((r,r)\) and \((n,n)\), denoted \(X_{r}\) and \(X_{n}\) respectively, as \(n\to \infty\) and \(\frac{r}{n}\) is small but bounded away from zero, the covariance satisfies \(\mbox{Cov}(X_{r},X_{n})=\Theta((\frac{r}{n})^{4/3+o(1)} n^{2/3})\), thereby establishing \(4/3\) as the temporal covariance exponent. This differs from the corresponding exponent for the droplet initial condition recently rigorously established in Ferrari and Occelli (2018), Basu and Ganguly (2018), and requires novel arguments. Key ingredients include the understanding of geodesic geometry and recent advances in quantitative comparison of geodesic weight profiles to Brownian motion using the Brownian Gibbs property. The proof methods are expected to be applicable for a wider class of initial data. 
 </i>
+</div>
+
 
 <br>
 <br>
-
-<hr>
-<big><b>Stationary Distributions for the Voter Model in \(d\geq 3\) are Bernoulli Shifts</b></big> (joint paper with <a href="http://web.math.princeton.edu/~asly/">Allan Sly</a>), <a href="https://arxiv.org/abs/1908.09450">arXiv</a>
-<br>
-<i>For the Voter Model on \(\mathbb{{Z}}^d\), \(d\geq 3\),
+<big><b>Stationary Distributions for the Voter Model in \(d\geq 3\) are Bernoulli Shifts</b></big> (joint paper with <a href="http://web.math.princeton.edu/~asly/">Allan Sly</a>), 2019.
+<a class="arxiv" href="https://arxiv.org/abs/1908.09450">arXiv</a>
+<a class="collapsible">Abstract</a>
+<div class="content">
+<i>
+For the Voter Model on \(\mathbb{{Z}}^d\), \(d\geq 3\),
 we show that the (extremal) stationary distributions are Bernoulli shifts, and answer an open question asked by Steif and Tykesson.
-The proof is by explicit constructing the stationary distributions as factors of IID processes on \(\mathbb{{Z}}^d\).</i>
+The proof is by explicit constructing the stationary distributions as factors of IID processes on \(\mathbb{{Z}}^d\).
+</i>
+</div>
 
 <br>
 <br>
 
-<hr>
-<big><b>Anderson-Bernoulli Localization on the 3D lattice and discrete unique continuation principle</b></big> (joint paper with <a href="https://www.math.upenn.edu/people/linjun-li">Linjun Li</a>), <a href="https://arxiv.org/abs/1906.04350">arXiv</a>
-<br>
+<big><b>Anderson-Bernoulli Localization on the 3D lattice and discrete unique continuation principle</b></big> (joint paper with <a href="https://www.math.upenn.edu/people/linjun-li">Linjun Li</a>), 2019.
+<a class="arxiv" href="https://arxiv.org/abs/1906.04350">arXiv</a>
+<a class="collapsible">Abstract</a>
+<div class="content">
 <i>We consider the Anderson model with Bernoulli potential on \(\mathbb{{Z}}^{3}\), and prove localization of eigenfunctions corresponding to eigenvalues near zero, the lower boundary of the spectrum.
 Our main contribution is the 3D discrete unique continuation, which says that any eigenfunction of harmonic operator with potential cannot be too small on a significant fractional portion of \(\mathbb{{Z}}^{3}\).</i>
+</div>
 
 <br>
 <br>
 
-<hr>
-<big><b>Interlacing adjacent levels of \(\beta\)-Jacobi corners processes</b></big> (joint paper with <a href="http://www.mccme.ru/~vadicgor/">Vadim Gorin</a>), <b>Probability Theory and Related Fields 172, no. 3-4 (2018): 915-981.</b> <a href="https://arxiv.org/abs/1612.02321">arXiv</a> <a href="https://link.springer.com/article/10.1007/s00440-017-0823-8">Journal</a>
-<br>
+<big><b>Interlacing adjacent levels of \(\beta\)-Jacobi corners processes</b></big> (joint paper with <a href="http://www.mccme.ru/~vadicgor/">Vadim Gorin</a>), <b>Probability Theory and Related Fields 172, no. 3-4 (2018): 915-981.</b>
+<a class="arxiv" href="https://arxiv.org/abs/1612.02321">arXiv</a> 
+<a class="journal" href="https://link.springer.com/article/10.1007/s00440-017-0823-8">Journal</a>
+<a class="collapsible">Abstract</a>
+<div class="content">
 <i>We study the asymptotic of the global fluctuations for the difference between two adjacent level in the \(\beta\)-Jacobi corners process (multilevel and general \(\beta\) extension of the classical Jacobi ensemble of random matrices). The limit is identified with the derivative of the \(2d\) Gaussian Free Field. Our main tool is integral forms for the (Macdonald-type) difference operators originating from the Shuffle algebra.</i>
+</div>
 
 <br>
 <br>
 
-<hr>
-<big><b>Refinements of the 2-dimensional Strichartz estimate on the maximum wavepacket</b></big> (joint paper with <a href="https://sites.google.com/view/hongwang/home">Hong Wang</a>), <a href="https://arxiv.org/abs/1611.10275">arXiv</a>
-<br>
+<big><b>Refinements of the 2-dimensional Strichartz estimate on the maximum wavepacket</b></big> (joint paper with <a href="https://sites.google.com/view/hongwang/home">Hong Wang</a>), 2016.
+<a class="arxiv" href="https://arxiv.org/abs/1611.10275">arXiv</a>
+<a class="collapsible">Abstract</a>
+<div class="content">
 <i>The Strichartz estimates for Schr&oumldinger equations can be improved when the data is spread out in either physical or frequency space. In this paper we give refinements of the 2-dimensional homogeneous Strichartz estimate on the maximum size of a single wave packet. Different approaches are used in the proofs, including arithmetic approaches, polynomial partitioning, and the \(l^2\) Decoupling Theorem, for different cases. We also give examples to show that the refinements we obtain cannot be further improved when \(2 \leq p \leq 4\) and \(p = 6\).</i>
+</div>
 
 <br>
 <br>
@@ -157,7 +216,7 @@ universality class, Jul, 2020.
 <br>
 <li>Integrable probability mini-workshop at Online Open Probability School, Jun 12, 2020.
 <br>
-<li><i>Temporal correlation in last passage percolation with flat initial condition (<a href="slides/KU_Talk.pdf">slide</a>).</i> <b>University of Kansas</b> Probability and Statistics Seminar, Apr 29, 2020. (Online Zoom talk <a href="videos/KU_Talk.mp4">video</a>)
+<li><i>Temporal correlation in last passage percolation with flat initial condition (<a href="slides/KU_Talk.pdf">slide</a>).</i> <b>University of Kansas</b> Probability and Statistics Seminar, Apr 29, 2020. (Online Zoom talk)
 <br>
 <li><b>(Cancelled due to COVID-19)</b><b>University of Wisconsin-Madison</b> (Madison, WI): Integrable Probability FRG Meeting, Apr, 2020.
 <br>
@@ -195,6 +254,23 @@ universality class, Jul, 2020.
 Last updated on Sep 4, 2020
 <br>
 <br>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
 </body>
 </html>
 
