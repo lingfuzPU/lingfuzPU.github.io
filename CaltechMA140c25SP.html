@@ -59,6 +59,11 @@
 .publication {
   color: #6666FF
 }
+
+html {
+  font-size: 120%;
+  line-height: 1.2;
+}
   
 </style>
 
@@ -80,17 +85,21 @@
 </script>
 </head>
 <body leftmargin="15%", rightmargin="15%">
-<TITLE>MA 140c - Spring 2025</TITLE>
+<TITLE>Ma/ACM/IDS 140c - Spring 2025</TITLE>
 <br>
 
-<H1>MA 140c: Probability (Spring 2025)</H1>
+<H1>Ma/ACM/IDS 140c: Probability (Spring 2025)</H1>
 
 <hr>
 <br>
-<b>Instructor</b> <a href="https://web.lfzhang.com/">Lingfu Zhang</a> (lingfuz@caltech)
+<b>Instructor</b> <a href="https://web.lfzhang.com/">Lingfu Zhang</a> (lingfuz@caltech; <b>Office</b> Linde Hall 358)
 <br>
 <br>
 <b>Class time</b> 10:30-11:50 on Tuesdays and Thursdays
+<br>
+<b>Class location</b> Linde Hall 183
+<br>
+<b>Office hour</b> TBD
 <br>
 <br>
 
@@ -98,26 +107,82 @@
 <hr>
 <br>
 
-<b>Grading</b> There will be about three problem sets, which may be done in groups. There will be no exam.
+This course aims to survey fundamental concepts and selected topics in modern probability theory, with a focus on asymptotic behavior. We will begin by introducing key tools such as the moment method and concentration inequalities, with applications in e.g., random graphs. 
+
+The course will then move into random matrix theory, covering classical models and techniques related to the eigenvalues of random matrices, including the Wigner semicircle law, \(\beta\)-ensemble statistics, determinantal point processes, and bulk and edge limits. The second direction is interacting particle systems, where we will discuss models such as the voter model, exclusion process, and contact process. 
+<br>
+<br>
+
+The course is intended for advanced undergraduate students and PhD students from mathematics and related departments.
+
+
+<br>
+<br>
+
+<b>Grading</b> For students who need to receive a grade for this course, there are three problem sets, which may be done in collaboration. There will be no exam.
 <br>
 <br>
 
 <H2>Reference material</H2>
 <hr>
 <li><a href="https://people.math.wisc.edu/~roch/mdp/index.html">Modern Discrete Probability: An Essential Toolkit</a> by Sebastien Roch.</li>
+<li><a href="http://www.win.tue.nl/~rhofstad/NotesRGCN.pdf">Random Graphs and Complex Networks</a> by Remco van der Hofstad.</li>
+<li><a href="https://www.cambridge.org/core/books/random-graph-dynamics/E2990863A1D32698CA62FCB17EAC2E22">Random Graph Dynamics</a> by Rick Durrett.</li>
 <li><a href="https://terrytao.wordpress.com/wp-content/uploads/2011/02/matrix-book.pdf">Topics in random matrix theory</a> by Terrence Tao.</li>
 <li><a href="https://www.wisdom.weizmann.ac.il/~zeitouni/cupbook.pdf">An Introduction to Random Matrices</a> by Greg W. Anderson, Alice Guionnet, and Ofer Zeitouni.</li>
+<li><a href="https://link.springer.com/book/10.1007/978-1-4419-0661-8">Spectral Analysis of Large Dimensional Random Matrices</a> by Zhidong Bai and Jack W. Silverstein.</li>
 <li><a href="https://link.springer.com/book/10.1007/978-1-4613-8542-4">Interacting Particle Systems</a> by Thomas M. Liggett.</li>
-<li><a href="https://www.cambridge.org/core/books/brownian-motion/F639B9A8403BD465F896F3E18A9C3382">Brownian Motion</a> by Peter Mörters and Yuval Peres.</li>
+<li><a href="https://www.statslab.cam.ac.uk/~grg/books/pgs.html">Probability on Graphs</a> by Geoffrey Grimmett.</li>
+<li><a href="https://www.stat.berkeley.edu/~aldous/RWG/book.pdf">Reversible Markov Chains and Random Walks on Graphs</a> by David Aldous and James A. Fill.</li>
+<li><a href="https://www.icts.res.in/sites/default/files/urs2019-tomohiro-Sasamoto-notes-4.pdf">Integrable stochastic interacting systems</a> by Tomohiro Sasamoto.</li>
 <br>
 
 <H2>Schedule</H2>
 <hr>
+<b>Apr 1</b> Introduction. Moment methods, random permutation, Erdős–Rényi graph. (Roch 2.1, 2.2)
+<br>
+<b>Apr 3</b> Random \(d\)-regular graph and configuration model, connectivity of random graphs. (Roch 2.2, van der Hofstad 7.2, 7.4-7.5, Durrett Chapter 3)
+<br>
+<b>Apr 8</b> Concentration inequalities and applications. (Roch 2.4, 3.2)
+<br>
+<b>Apr 10</b> Monotone coupling and FKG. (Roch 4.2)
+<br>
+<h3>Random Matrix Theory</h3>
+<b>Apr 15</b> Wigner matrices, operator norm, semi-circle law. (Tao 2.3, 2.4, AGZ 2.1)
+<br>
+<b>Apr 17</b> Stieltjes transform, Marchenko-Pastur law. (AGZ 2.4, BS Chapter 3)
+<br>
+<b>Apr 22</b> Gaussian/Wishart/Jacobi Unitary/Orthogonal matrices. (AGZ 2.5, 4.1)
+<br>
+<b>Apr 24</b> Bulk and edge limits, determinantal point process. (AGZ 3.1, 3.4, 4.2)
+<br>
+<b>Apr 29</b> Sine and Airy kernels (Tao 3.2, AGZ 3.5, 3.7)
+<br>
+<b>May 1</b> Tracy-Widom distributions, tri-diagonal matrices (AGZ 3.8, 4.5)
+<br>
+<b>May 6</b> Matrix addition and free convolution (Tao 2.5)
+<br>
+<h3>Interacting Particle System</h3>
+<b>May 8</b> Duality, Voter model, coalescing random walks (Liggett 2.3, 5.1-5.3, AF 14.3)
+<br>
+<b>May 13</b> Contact process (SIS) (Grimmett 6.3-6.6, Liggett Chapter 6)
+<br>
+<b>May 15</b> Exclusion process, coupling and invariant measures (Liggett 8.1, 8.2) 
+<br>
+<b>May 20</b> Asymmetric simple exclusion process, Bethe ansatz (Sasamoto 1.1-1.4)
+<br>
+<b>May 22</b> Multi-species exclusion process, Hecke algebra, symmetry
+<br>
+<b>May 27</b> Queueing, Burke's theorem, multi-species invariant measure
+<br>
+<b>May 29</b> TBD
 <br>
 
 <H2>Problem sets</H2>
 <hr>
+To be released.
 <br>
+
 
 <br>
 <br>
